@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "35135301586",
+    "firebase_url": "https://ration-helper-default-rtdb.firebaseio.com",
+    "project_id": "ration-helper",
+    "storage_bucket": "ration-helper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35135301586:android:a472d6bedbb58b91378a0b",
+        "android_client_info": {
+          "package_name": "com.mila.rationhelper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35135301586-tmd2sjdse386jhtintsn7vj8b74dekcl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv7_C1FVph0mPoW1zeCXvcBeUbWpnkXVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35135301586-tmd2sjdse386jhtintsn7vj8b74dekcl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
