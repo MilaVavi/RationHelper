@@ -118,50 +118,7 @@ public class Constants {
     // SAMPLE DATA
     @NotNull
     public static RecipeEntity[] getSampleRecipes(){
-        RecipeEntity[] recipes = new RecipeEntity[4];
-
-        // dummy objects
-        ArrayList<String> recipe1ArrayList = new ArrayList<>();
-        recipe1ArrayList.add("pick the apple");
-        recipe1ArrayList.add("eat the apple");
-        ArrayList<String> ingredients1 = new ArrayList<>();
-        ingredients1.add("apple");
-        RecipeEntity dummyRecipe1 = new RecipeEntity("Aple", 100, recipe1ArrayList, ingredients1, "T", "F", "F", RECIPE_CATEGORIES[2], "https://www.caloriesecrets.net/wp-content/uploads/2017/03/apple-seeds.jpg");
-        recipes[0] = dummyRecipe1;
-
-        ArrayList<String> recipe2ArrayList = new ArrayList<>();
-        recipe2ArrayList.add("heat the frying pan");
-        recipe2ArrayList.add("pour the thing");
-        recipe2ArrayList.add("wait till ready");
-        ArrayList<String> ingredients2 = new ArrayList<>();
-        ingredients2.add("flour");
-        ingredients2.add("pancakes things");
-        RecipeEntity dummyRecipe2 = new RecipeEntity("Pancakes", 500, recipe2ArrayList, ingredients2, "F", "T", "F", RECIPE_CATEGORIES[1], "https://www.graceandgoodeats.com/wp-content/uploads/2015/01/best-ever-homemade-pancakes-500x375.jpg");
-        recipes[1] = dummyRecipe2;
-
-        ArrayList<String> recipe3ArrayList = new ArrayList<>();
-        recipe3ArrayList.add("open Edie's rockets webpage");
-        recipe3ArrayList.add("order burger");
-        ArrayList<String> ingredients3 = new ArrayList<>();
-        ingredients3.add("access to the internet");
-        RecipeEntity dummyRecipe3 = new RecipeEntity("Burger", 5500, recipe3ArrayList, ingredients3, "F", "F", "T", RECIPE_CATEGORIES[1], "https://i.pinimg.com/originals/0a/fa/9e/0afa9e53ae26dfef726e71cd20491bd3.jpg");
-        recipes[2] = dummyRecipe3;
-
-        ArrayList<String> recipe4ArrayList = new ArrayList<>();
-        recipe4ArrayList.add("pick the fruit");
-        recipe4ArrayList.add("squeeze hard enough");
-        recipe4ArrayList.add("drink");
-        ArrayList<String> ingredients4 = new ArrayList<>();
-        ingredients4.add("fruit");
-        RecipeEntity dummyRecipe4 = new RecipeEntity("Juice", 150, recipe4ArrayList, ingredients4, "F", "F", "T", RECIPE_CATEGORIES[3], "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/juices-long-d4d60df.jpg?quality=90&resize=960,872");
-        recipes[3] = dummyRecipe4;
-
-        return recipes;
-    }
-
-    public static RecipeEntity[] getSampleRecipesFirebase(){
-        // TODO replace with recipes for a firebase
-        RecipeEntity[] recipes = new RecipeEntity[18];
+        RecipeEntity[] recipes = new RecipeEntity[8];
 
         // dummy objects
         ArrayList<String> recipe1ArrayList = new ArrayList<>();
@@ -174,7 +131,168 @@ public class Constants {
         ingredients1.add("½ cup (or ¼ of a mug) of dry porridge oats");
         ingredients1.add("1 cup (or ½ mug) of low fat milk");
         ingredients1.add("1 teaspoon of honey");
-        RecipeEntity fbRecipe1 = new RecipeEntity("Traditional porridge",432,recipe1ArrayList, ingredients1, "T", "T","T",RECIPE_CATEGORIES[1], "https://www.diabetes.ie/wp-content/uploads/2014/11/Porridgepic.jpg");
+        RecipeEntity locRecipe1 = new RecipeEntity("Traditional porridge",432,recipe1ArrayList, ingredients1, "T", "F","F",RECIPE_CATEGORIES[4], "https://www.diabetes.ie/wp-content/uploads/2014/11/Porridgepic.jpg");
+        recipes[0] = locRecipe1;
+
+        ArrayList<String> recipe22ArrayList = new ArrayList<>();
+        recipe22ArrayList.add("Make around 35ml espresso using a coffee machine and pour it into the base of your cup.");
+        recipe22ArrayList.add("Steam the milk with the steamer attachment so that it has around 4-6cm of foam on top.");
+        recipe22ArrayList.add("Hold the jug so that the spout is about 3-4cm above the cup and pour the milk in steadily.");
+        recipe22ArrayList.add("As the volume within the cup increases, bring the jug as close to the surface of the drink as possible whilst aiming to pour into the centre.");
+        recipe22ArrayList.add("Once the milk jug is almost touching the surface of the coffee, tilt the jug to speed up the rate of pour.");
+        ArrayList<String> ingredients22 = new ArrayList<>();
+        ingredients22.add("for 1 portion");
+        ingredients22.add("18g ground espresso (or 1 espresso pod)");
+        ingredients22.add("150ml milk");
+        RecipeEntity locRecipe22 = new RecipeEntity("Cappuccino", 98, recipe22ArrayList, ingredients22, "T", "F", "F", RECIPE_CATEGORIES[3], "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/cappucino-32dbfba.jpg?quality=90&webp=true&resize=375,341" );
+        recipes[1] = locRecipe22;
+
+        ArrayList<String> recipe9ArrayList = new ArrayList<>();
+        recipe9ArrayList.add("Wash, peel and dice carrots, turnips and parsnips.");
+        recipe9ArrayList.add("Wash and chop leeks, chop onion and slice mushrooms.");
+        recipe9ArrayList.add("Chop the tomatoes.");
+        recipe9ArrayList.add("Heat the oil in a large saucepan, and gently fry onion and mushrooms.");
+        recipe9ArrayList.add("Add carrots, turnips, parsnips and leeks and fry gently.");
+        recipe9ArrayList.add("Stir in the flour to absorb fat, gradually stir in the semi-skimmed milk.");
+        recipe9ArrayList.add("Add stock and bring to boil, stirring continuously.");
+        recipe9ArrayList.add("Add tomatoes, pepper and a pinch of salt if desired.");
+        recipe9ArrayList.add("Cover saucepan and simmer gently for about 45 minutes.");
+        ArrayList<String> ingredients9 = new ArrayList<>();
+        ingredients9.add("for 4 portions");
+        ingredients9.add("3 medium carrots");
+        ingredients9.add("1 medium turnip");
+        ingredients9.add("1 medium parsnip");
+        ingredients9.add("2 leeks");
+        ingredients9.add("1 medium onion");
+        ingredients9.add("8 mushrooms");
+        ingredients9.add("3 medium tomatoes");
+        ingredients9.add("1 teaspoon of vegetable oil");
+        ingredients9.add("50g / 2 oz. of plain flour");
+        ingredients9.add("150ml / ¼ pint of low fat milk");
+        ingredients9.add("2 vegetable stock cubes dissolved in 1 litre / 1¾ pints of water");
+        RecipeEntity fbRecipe9 = new RecipeEntity("Farmhouse vegetable soup",151, recipe9ArrayList, ingredients9, "F","T", "F", RECIPE_CATEGORIES[4], "https://www.diabetes.ie/wp-content/uploads/2020/11/Getty_138014362-scaled.jpg");
+        recipes [2] = fbRecipe9;
+
+
+        ArrayList<String>recipe2ArrayList = new ArrayList<>();
+        recipe2ArrayList.add("Slice the tomato and aubergine into slices ½ inch thick. ");
+        recipe2ArrayList.add("You want 1-2 slices of tomato and 1-2 slices of aubergine per bagel.");
+        recipe2ArrayList.add("Brush the slices with a little of olive oil, put them on a baking tray and roast them in the oven at 200 oC for 5 minutes, turning once.");
+        recipe2ArrayList.add("Put the 2 eggs on to poach.");
+        recipe2ArrayList.add("Spread the bagels with about 1 dessertspoon of basil pesto each.");
+        recipe2ArrayList.add("Toast them under the grill until the edges start to brown.");
+        recipe2ArrayList.add("Top the bagels with slices of aubergine and tomato and sit an egg on top. Enjoy!");
+        ArrayList<String> ingredients2 = new ArrayList<>();
+        ingredients2.add("for 2 portions");
+        ingredients2.add("2 bagels (you can try different types of breads)");
+        ingredients2.add("1 jar basil pesto");
+        ingredients2.add("1 large tomato (beef tomatoes if you can get them)");
+        ingredients2.add("¼ aubergine");
+        ingredients2.add("2 eggs");
+        ingredients2.add("Salt and pepper to taste");
+        RecipeEntity fbRecipe2 = new RecipeEntity("Veggie-topped bagel with poached egg", 361, recipe2ArrayList, ingredients2, "F", "T", "F", RECIPE_CATEGORIES[1], "https://www.diabetes.ie/wp-content/uploads/2014/11/veggy-topped-bagel.jpg");
+        recipes[3] = fbRecipe2;
+
+
+
+        ArrayList<String> recipe5ArrayList = new ArrayList<>();
+        recipe5ArrayList.add("Make sure all the ingredients are chilled before use");
+        recipe5ArrayList.add("Wash and peel fruit");
+        recipe5ArrayList.add("Blend fruit, yogurt, milk and juice together using a hand held blender or a smoothie maker until creamy");
+        recipe5ArrayList.add("Add ice cubes and blend again");
+        recipe5ArrayList.add("Pour into two glasses and serve");
+        ArrayList<String> ingredients5 = new ArrayList<>();
+        ingredients5.add("for 2 portions");
+        ingredients5.add("160g fresh pineapple");
+        ingredients5.add("½ pot (62g) of low fat natural yogurt");
+        ingredients5.add("90ml low fat milk");
+        ingredients5.add("4 ice cubes");
+        ingredients5.add("90ml unsweetened orange juice");
+        RecipeEntity fbRecipe5 =new RecipeEntity("Simple Pineapple Smoothie", 89, recipe5ArrayList,ingredients5,"F","T","F", RECIPE_CATEGORIES[3], "https://www.diabetes.ie/wp-content/uploads/2014/11/banana-oaty-smoothie.jpg");
+        recipes[4] = fbRecipe5;
+
+        ArrayList<String> recipe19ArrayList = new ArrayList<>();
+        recipe19ArrayList.add("Preheat the oven to Gas Mark 6 or 200°C.");
+        recipe19ArrayList.add("Mix 2 tablespoons of olive oil, the cumin seeds, and the carrots in a roasting tin.");
+        recipe19ArrayList.add("Roast the carrot mixture for 20 minutes and flip over 10 minutes into cooking, to ensure it’s cooked on both sides.");
+        recipe19ArrayList.add("Then, pour on the agave nectar; toss the carrots, and roast for another 5 minutes.");
+        recipe19ArrayList.add("Warm through the Puy lentils, red onion, lemon juice, a tablespoon of olive oil and salt and pepper to taste.");
+        recipe19ArrayList.add("Allow to cool slightly while the carrots finish cooking.");
+        recipe19ArrayList.add("To plate up, fill the lettuce leaves with the dressed lentils and mint.");
+        recipe19ArrayList.add("Lay warm spiced carrots on top of the lentils, scatter with feta, and serve!");
+        ArrayList<String> ingredients19 = new ArrayList<>();
+        ingredients19.add("for 4 portions");
+        ingredients19.add("3 tbsp. olive oil");
+        ingredients19.add("1.5. cumin seeds");
+        ingredients19.add("350g carrots, cut into small chip sized pieces");
+        ingredients19.add("1 tbsp. agave nectar");
+        ingredients19.add("250g tinned Puy lentils, drained and rinsed");
+        ingredients19.add("1 red onion, finely chopped");
+        ingredients19.add("Juice of a lemon");
+        ingredients19.add("Salt and pepper to taste");
+        ingredients19.add("3 small lettuces");
+        ingredients19.add("Handful of fresh mint, chopped");
+        ingredients19.add("100g feta cheese, crumbled");
+        RecipeEntity fbRecipe19 = new RecipeEntity("Feta and Carrot Salad", 338, recipe19ArrayList, ingredients19, "F", "F", "T", RECIPE_CATEGORIES[0], "https://www.diabetes.co.uk/recipes/images/uploads/Feta5275.JPG" );
+        recipes[5] = fbRecipe19;
+
+        ArrayList<String> recipe12ArrayList = new ArrayList<>();
+        recipe12ArrayList.add("Fry the meat in a frying pan on both sides until browned.");
+        recipe12ArrayList.add("Remove from the frying pan and place in a saucepan.");
+        recipe12ArrayList.add("Chop the onions and carrots and fry lightly.");
+        recipe12ArrayList.add("Remove from the frying pan and place with the meat in the saucepan.");
+        recipe12ArrayList.add("Sprinkle the flour into the frying pan and stir well.");
+        recipe12ArrayList.add("Add the stock cubes, water and seasoning. Continue stirring.");
+        recipe12ArrayList.add("Add this to the meat and vegetables and cook gently over a low heat for 1 to 1½ hours until the meat is tender.");
+        ArrayList<String> ingredients12 = new ArrayList<>();
+        ingredients12.add("for 4 portions");
+        ingredients12.add("675g / 1½ lb of lean stewing beef, diced");
+        ingredients12.add("1 dessertspoon vegetable oil");
+        ingredients12.add("1 beef stock cube dissolved in 575ml / 1 pint of water or homemade stock");
+        ingredients12.add("40g / 1½ oz. of plain flour");
+        ingredients12.add("5 medium carrots, peeled and chopped");
+        ingredients12.add("1 medium onion, chopped");
+        ingredients12.add("Salt and pepper, to taste");
+        RecipeEntity fbRecipe12 = new RecipeEntity(" Beef Stew", 301, recipe12ArrayList, ingredients12, "F", "F", "T", RECIPE_CATEGORIES[1], "https://www.diabetes.ie/wp-content/uploads/2021/01/Getty_176761284-scaled.jpg" );
+        recipes[6] = fbRecipe12;
+
+        ArrayList<String> recipe21ArrayList = new ArrayList<>();
+        recipe21ArrayList.add("Mix the honey and lemon juice in the bottom of a cup while you boil the kettle.");
+        recipe21ArrayList.add("Pour over the hot water, add the lemon slice and stir well to combine.");
+        recipe21ArrayList.add(" Add another teaspoon of honey if you prefer it sweeter.");
+        ArrayList<String> ingredients21 = new ArrayList<>();
+        ingredients21.add("for 1 portion");
+        ingredients21.add("2-3 tsp honey");
+        ingredients21.add("1/4 lemon juiced, plus 1 slice");
+        RecipeEntity fbRecipe21 = new RecipeEntity("Honey tea", 50, recipe21ArrayList, ingredients21, "F", "F", "T", RECIPE_CATEGORIES[3], "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/lemon-and-honey-tea-01ec2b5.jpg?quality=90&webp=true&resize=375,341" );
+        recipes[7] = fbRecipe21;
+
+
+
+
+
+
+
+
+        return recipes;
+    }
+
+    public static RecipeEntity[] getSampleRecipesFirebase(){
+        // TODO replace with recipes for a firebase
+        RecipeEntity[] recipes = new RecipeEntity[22];
+
+        // dummy objects
+        ArrayList<String> recipe1ArrayList = new ArrayList<>();
+        recipe1ArrayList.add("Put everything in a saucepan (non-stick if you have it) and gradually bring to the boil. Do stand beside it and watch it as it can easily boil over.");
+        recipe1ArrayList.add("Once it has come to the boil turn it down and simmer for 5 to 10 minutes depending on how tender you like your oats");
+        recipe1ArrayList.add("Stir it occasionally. If it gets too thick (and how thick you like it is up to you) just add an extra drop of milk or water, but remember adding extra milk will add to the total carbohydrate content of the breakfast.");
+        recipe1ArrayList.add("If you want to microwave the porridge, just follow the instructions on the pack");
+        ArrayList<String> ingredients1 = new ArrayList<>();
+        ingredients1.add("for 1 portion");
+        ingredients1.add("½ cup (or ¼ of a mug) of dry porridge oats");
+        ingredients1.add("1 cup (or ½ mug) of low fat milk");
+        ingredients1.add("1 teaspoon of honey");
+        RecipeEntity fbRecipe1 = new RecipeEntity("Traditional porridge",432,recipe1ArrayList, ingredients1, "T", "T","T",RECIPE_CATEGORIES[4], "https://www.diabetes.ie/wp-content/uploads/2014/11/Porridgepic.jpg");
         recipes[0] = fbRecipe1;
 
         ArrayList<String>recipe2ArrayList = new ArrayList<>();
@@ -207,7 +325,7 @@ public class Constants {
         ingredients3.add("50g sesame seeds");
         ingredients3.add("50g sunflower seeds");
         ingredients3.add("100g chopped mixed nuts (e.g. brazil nuts, hazelnuts, walnuts and almonds)");
-        RecipeEntity fbRecipe3 = new RecipeEntity("HOMEMADE FRUITY NUTTY MUESLI", 220, recipe3ArrayList, ingredients3, "T", "T", "T", RECIPE_CATEGORIES[4], "https://www.diabetes.ie/wp-content/uploads/2014/11/muesli.jpg");
+        RecipeEntity fbRecipe3 = new RecipeEntity("Homemade Fruity Nutty Muesli", 220, recipe3ArrayList, ingredients3, "T", "T", "T", RECIPE_CATEGORIES[4], "https://www.diabetes.ie/wp-content/uploads/2014/11/muesli.jpg");
         recipes[2]= fbRecipe3;
 
         ArrayList<String> recipe4ArrayList = new ArrayList<>();
@@ -217,7 +335,7 @@ public class Constants {
         ingredients4.add("1 small pot of natural yogurt (125g)");
         ingredients4.add("3 tablespoons of fresh blueberries");
         ingredients4.add("2 tablespoons of muesli");
-        RecipeEntity fbRecipe4 = new RecipeEntity("CRUNCHY BLUEBERRY YOGHURT", 218, recipe4ArrayList, ingredients4, "T", "T","T",RECIPE_CATEGORIES [2], "https://www.diabetes.ie/wp-content/uploads/2014/11/BerryYougurt240x185.jpg");
+        RecipeEntity fbRecipe4 = new RecipeEntity("Crunchy blueberry yogurt", 218, recipe4ArrayList, ingredients4, "T", "T","T",RECIPE_CATEGORIES [2], "https://www.diabetes.ie/wp-content/uploads/2014/11/BerryYougurt240x185.jpg");
         recipes[3] = fbRecipe4;
 
         ArrayList<String> recipe5ArrayList = new ArrayList<>();
@@ -233,7 +351,7 @@ public class Constants {
         ingredients5.add("90ml low fat milk");
         ingredients5.add("4 ice cubes");
         ingredients5.add("90ml unsweetened orange juice");
-        RecipeEntity fbRecipe5 =new RecipeEntity("SIMPLE PINEAPPLE SMOOTHIE", 89, recipe5ArrayList,ingredients5,"T","T","T", RECIPE_CATEGORIES[3], "https://www.diabetes.ie/wp-content/uploads/2014/11/banana-oaty-smoothie.jpg");
+        RecipeEntity fbRecipe5 =new RecipeEntity("Simple Pineapple Smoothie", 89, recipe5ArrayList,ingredients5,"T","T","T", RECIPE_CATEGORIES[3], "https://www.diabetes.ie/wp-content/uploads/2014/11/banana-oaty-smoothie.jpg");
         recipes[4] = fbRecipe5;
 
         ArrayList<String> recipe6ArrayList = new ArrayList<>();
@@ -249,7 +367,7 @@ public class Constants {
         ingredients6.add("1 green apple, preferable Granny Smith’s");
         ingredients6.add("1 teaspoon mixed fresh thyme and rosemary, well chopped");
         ingredients6.add("1 dessertspoon of low-fat French dressing");
-        RecipeEntity fbRecipe6 = new RecipeEntity("GREEN CHICKEN SALAD", 279, recipe6ArrayList, ingredients6, "T", "T", "T", RECIPE_CATEGORIES[0], "https://www.diabetes.ie/wp-content/uploads/2014/11/green-salad.jpg");
+        RecipeEntity fbRecipe6 = new RecipeEntity("Green Chicken Salad", 279, recipe6ArrayList, ingredients6, "T", "T", "T", RECIPE_CATEGORIES[0], "https://www.diabetes.ie/wp-content/uploads/2014/11/green-salad.jpg");
         recipes [5] = fbRecipe6;
 
         ArrayList<String> recipe7ArrayList = new ArrayList<>();
@@ -266,7 +384,7 @@ public class Constants {
         ingredients7.add("1 x 225g / 8 oz. small can of baked beans");
         ingredients7.add("55g / 2 oz. of low-fat cheddar cheese, grated");
         ingredients7.add("Salt and pepper to taste");
-        RecipeEntity fbRecipe7 = new RecipeEntity("BEANS AND CHEESE BAKED POTATO", 276, recipe7ArrayList,ingredients7, "T", "T", "T", RECIPE_CATEGORIES [4], "https://www.diabetes.ie/wp-content/uploads/2014/11/BAKED-POTATO.jpg");
+        RecipeEntity fbRecipe7 = new RecipeEntity("Beans and cheese baked potato", 276, recipe7ArrayList,ingredients7, "T", "T", "T", RECIPE_CATEGORIES [4], "https://www.diabetes.ie/wp-content/uploads/2014/11/BAKED-POTATO.jpg");
         recipes [6] = fbRecipe7;
 
         ArrayList<String> recipe8ArrayList = new ArrayList<>();
@@ -283,7 +401,7 @@ public class Constants {
         ingredients8.add("1 tablespoon of olive oil");
         ingredients8.add("1 handful of chopped fresh parsley");
         ingredients8.add("Freshly ground pepper to taste");
-        RecipeEntity fbRecipe8 = new RecipeEntity("CHICKEN AVOCADO SALAD", 268, recipe8ArrayList, ingredients8, "T", "T", "T", RECIPE_CATEGORIES [0], "https://www.diabetes.ie/wp-content/uploads/2014/11/ChickenSalad240x90.jpg");
+        RecipeEntity fbRecipe8 = new RecipeEntity("Chicken Avocado Salad", 268, recipe8ArrayList, ingredients8, "T", "T", "T", RECIPE_CATEGORIES [0], "https://www.diabetes.ie/wp-content/uploads/2014/11/ChickenSalad240x90.jpg");
         recipes [7] = fbRecipe8;
 
         ArrayList<String> recipe9ArrayList = new ArrayList<>();
@@ -501,13 +619,78 @@ public class Constants {
         RecipeEntity fbRecipe18 = new RecipeEntity("Pancakes", 109, recipe18ArrayList, ingredients18, "T", "T", "T", RECIPE_CATEGORIES[2], "https://www.diabetes.ie/wp-content/uploads/2021/02/Getty_504698622-scaled.jpg" );
         recipes[17] = fbRecipe18;
 
+        ArrayList<String> recipe19ArrayList = new ArrayList<>();
+        recipe19ArrayList.add("Preheat the oven to Gas Mark 6 or 200°C.");
+        recipe19ArrayList.add("Mix 2 tablespoons of olive oil, the cumin seeds, and the carrots in a roasting tin.");
+        recipe19ArrayList.add("Roast the carrot mixture for 20 minutes and flip over 10 minutes into cooking, to ensure it’s cooked on both sides.");
+        recipe19ArrayList.add("Then, pour on the agave nectar; toss the carrots, and roast for another 5 minutes.");
+        recipe19ArrayList.add("Warm through the Puy lentils, red onion, lemon juice, a tablespoon of olive oil and salt and pepper to taste.");
+        recipe19ArrayList.add("Allow to cool slightly while the carrots finish cooking.");
+        recipe19ArrayList.add("To plate up, fill the lettuce leaves with the dressed lentils and mint.");
+        recipe19ArrayList.add("Lay warm spiced carrots on top of the lentils, scatter with feta, and serve!");
+        ArrayList<String> ingredients19 = new ArrayList<>();
+        ingredients19.add("for 4 portions");
+        ingredients19.add("3 tbsp. olive oil");
+        ingredients19.add("1.5. cumin seeds");
+        ingredients19.add("350g carrots, cut into small chip sized pieces");
+        ingredients19.add("1 tbsp. agave nectar");
+        ingredients19.add("250g tinned Puy lentils, drained and rinsed");
+        ingredients19.add("1 red onion, finely chopped");
+        ingredients19.add("Juice of a lemon");
+        ingredients19.add("Salt and pepper to taste");
+        ingredients19.add("3 small lettuces");
+        ingredients19.add("Handful of fresh mint, chopped");
+        ingredients19.add("100g feta cheese, crumbled");
+        RecipeEntity fbRecipe19 = new RecipeEntity("Feta and Carrot Salad", 338, recipe19ArrayList, ingredients19, "T", "T", "T", RECIPE_CATEGORIES[0], "https://www.diabetes.co.uk/recipes/images/uploads/Feta5275.JPG" );
+        recipes[18] = fbRecipe19;
 
+        ArrayList<String> recipe20ArrayList = new ArrayList<>();
+        recipe20ArrayList.add("Boil two inches of water in a medium saucepan.");
+        recipe20ArrayList.add("Add the green beans, sugar snaps yellow marrow, courgette and onions to the saucepan.");
+        recipe20ArrayList.add("Lower the heat; cover the pan and simmer for 3 minutes, until the vegetables are crisp and tender.");
+        recipe20ArrayList.add("Then drain the vegetables and rinse under cold water.");
+        recipe20ArrayList.add("Pat the vegetables dry.");
+        recipe20ArrayList.add("Place vegetables into a bowl with the remaining ingredients, including the vinaigrette.");
+        recipe20ArrayList.add("Stir in gently.");
+        recipe20ArrayList.add("Place in the fridge until you need to serve the salad.");
+        ArrayList<String> ingredients20 = new ArrayList<>();
+        ingredients20.add("for 4 portions");
+        ingredients20.add("100g fresh green beans");
+        ingredients20.add("100g fresh sugar snaps");
+        ingredients20.add("50g finely sliced yellow summer squash");
+        ingredients20.add("100g courgette, finely sliced");
+        ingredients20.add("50g red onions, finely sliced");
+        ingredients20.add("100g carrots, coarsely grated");
+        ingredients20.add("2 small tomatoes, chopped into small cubes");
+        ingredients20.add("4 tsp of minced chives");
+        ingredients20.add("2 tsp of dried basil");
+        RecipeEntity fbRecipe20 = new RecipeEntity("Summer Vegetable Salad", 46, recipe20ArrayList, ingredients20, "T", "T", "T", RECIPE_CATEGORIES[0], "https://www.diabetes.co.uk/recipes/images/uploads/summ5048.jpg" );
+        recipes[19] = fbRecipe20;
 
+        ArrayList<String> recipe21ArrayList = new ArrayList<>();
+        recipe21ArrayList.add("Mix the honey and lemon juice in the bottom of a cup while you boil the kettle.");
+        recipe21ArrayList.add("Pour over the hot water, add the lemon slice and stir well to combine.");
+        recipe21ArrayList.add(" Add another teaspoon of honey if you prefer it sweeter.");
+        ArrayList<String> ingredients21 = new ArrayList<>();
+        ingredients21.add("for 1 portion");
+        ingredients21.add("2-3 tsp honey");
+        ingredients21.add("1/4 lemon juiced, plus 1 slice");
+        RecipeEntity fbRecipe21 = new RecipeEntity("Honey tea", 50, recipe21ArrayList, ingredients21, "T", "T", "T", RECIPE_CATEGORIES[3], "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/lemon-and-honey-tea-01ec2b5.jpg?quality=90&webp=true&resize=375,341" );
+        recipes[20] = fbRecipe21;
 
+        ArrayList<String> recipe22ArrayList = new ArrayList<>();
+        recipe22ArrayList.add("Make around 35ml espresso using a coffee machine and pour it into the base of your cup.");
+        recipe22ArrayList.add("Steam the milk with the steamer attachment so that it has around 4-6cm of foam on top.");
+        recipe22ArrayList.add("Hold the jug so that the spout is about 3-4cm above the cup and pour the milk in steadily.");
+        recipe22ArrayList.add("As the volume within the cup increases, bring the jug as close to the surface of the drink as possible whilst aiming to pour into the centre.");
+        recipe22ArrayList.add("Once the milk jug is almost touching the surface of the coffee, tilt the jug to speed up the rate of pour.");
+        ArrayList<String> ingredients22 = new ArrayList<>();
+        ingredients22.add("for 1 portion");
+        ingredients22.add("18g ground espresso (or 1 espresso pod)");
+        ingredients22.add("150ml milk");
+        RecipeEntity fbRecipe22 = new RecipeEntity("Cappuccino", 98, recipe22ArrayList, ingredients22, "T", "T", "T", RECIPE_CATEGORIES[3], "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/cappucino-32dbfba.jpg?quality=90&webp=true&resize=375,341" );
+        recipes[21] = fbRecipe22;
 
-
-
-        // return new array recipe
         return recipes;
     }
 
